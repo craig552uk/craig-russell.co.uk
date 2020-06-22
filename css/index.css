@@ -258,10 +258,12 @@ a[href].direct-link:focus:visited,
 }
 
 .section {
+  clear: both;
   margin-bottom: 3rem;
 }
 
 footer {
+  clear: both;
   font-size: 0.8rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -271,4 +273,8 @@ footer {
 .highlight {
   background-color: yellow;
   padding: 0.3rem;
+}
+
+input {
+  font-size: 1.1rem;
 }
