@@ -1,14 +1,43 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Home
+  key: Craig Russell
   order: 1
 ---
 
-<h1>Latest 3 Posts</h1>
+<div class="profile section">
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+  <div class="profile-img">
+    <img src="/img/avatar.jpg" alt="Craig Russell Profile Pic">
+  </div>
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+  <h1 class="profile-title">Hi! I'm Craig,</h1>
+
+  <p>I used to develop software, now I develop people. </p>
+
+  <p>And I love both.</p>
+
+  <p>I’ve been working in tech for over 20 years. I’ve built products used by tens of thousands and ran high performance services on tight SLAs. I’ve worked public sector enterprise and startup SaaS. I’ve grown teams of developers, supported people at all stages of their career and shipped more bug fixes than I’d want to count. </p>
+
+  <p>In this blog I write about some of the things I’ve learned and many more things I’m still learning. </p>
+
+  <p>I love to teach and I love to learn. </p>
+
+  <p>For comments, criticism, feedback and opinions find me on <a href="https://www.linkedin.com/in/craigrussell1983/">LinkedIn</a> and <a href="https://twitter.com/craig552uk">Twitter</a>. </p>
+</div>
+
+<div class="social-links section">
+    <a href="https://www.linkedin.com/in/craigrussell1983/" style="color:#0077b5"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/craig552uk" style="color:rgba(29,161,242,1.00)"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+    <a href="https://github.com/craig552uk" style="color:#24292e"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+</div>
+
+<div class="latest-posts section">
+  <h2>Latest Posts</h2>
+
+  {% set postslist = collections.posts | head(-3) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postslist.njk" %}
+
+  <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+</div>
