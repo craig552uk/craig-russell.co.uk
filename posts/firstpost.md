@@ -5,6 +5,8 @@ date: 2018-05-01
 tags:
   - another-tag
 layout: layouts/post.njk
+linkedin: https://www.linkedin.com/posts/craigrussell1983_widen-my-path-suggest-more-space-for-physical-activity-6678943486772830208-sbrf
+twitter: https://twitter.com/craig552uk/status/1275416588070653953
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

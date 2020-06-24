@@ -48,6 +48,7 @@ main :first-child {
 header {
   border-bottom: 1px dashed var(--lightgray);
 }
+
 header:after {
   content: "";
   display: table;
@@ -277,4 +278,17 @@ footer {
 
 input {
   font-size: 1.1rem;
+}
+
+.social-section {
+  clear: both;
+  padding-top: 3rem;
+  border-top: 1px dashed var(--lightgray);
+  text-align: center;
+}
+
+.socialmedia-posts twitter-widget,
+.socialmedia-posts .linkedin-post {
+  margin:auto;
+  width: 550px;
 }

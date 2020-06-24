@@ -4,6 +4,21 @@ templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
 
-{{ content | safe }}
+<div class="section">
+    {{ content | safe }}
+</div>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+{% if linkedin  or twitter %}
+<div class="social-section">
+    <h3>Continue the conversation on</h3>
+    <div class="social-links">
+        {% if twitter %}
+            <a href="{{ twitter }}" target="_blank" style="color:rgba(29,161,242,1.00)"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+        {% endif %}
+
+        {% if linkedin %}
+            <a href="{{ linkedin }}" target="_blank" style="color:#0077b5"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
